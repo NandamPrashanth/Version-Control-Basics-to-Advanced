@@ -75,11 +75,11 @@ The .git/ folder contains all the internal Git data, including:
 1. Create a file
 sample.txt  
 2. add content to the file
-3. Now ran the below command and it will give you current changes of the file
+3. Now ran the below command and it will give you current changes of the file  
 git status  
-4. Now we need to run below command
+4. Now we need to run below command  
 git add . or git add filename
 It will stage the file, which means we are telling the git to include this files in our next commit.  
 6. Now use git commit   
-git commit -m "message"
+git commit -m "message"  
 It will commit the changes to local repo
