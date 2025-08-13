@@ -26,5 +26,60 @@ A Distributed Version Control System is a system where every developer has a ful
 - You later push your changes to a shared server (like GitHub or GitLab)  
 - Others can pull changes into their own copy
 
+------------------------------------------------------------------------------------------------------------
 
+# How to install git in Linux machine
 
+Below are the steps to follow to install git in your linux machine.
+<br>
+1. Updaate your system  
+sudo dnf update -y  
+2. Install git using DNF  
+sudo dnf install git -y  
+3. Veirify the version, if it installed succesfully then it will show us the installed version details  
+git --version  
+<br>
+
+# How to install git in Windows machine  
+
+1. Click on the below official link 
+https://git-scm.com/downloads/win  
+2. Download the installer file  
+3. Go through the setup wizard    
+4. Now after successfull installation verify the git version by running the below command  
+git --version
+
+----------------------------------------------------------------------------------------------------------------------------
+
+# Now we will learn how to initialize git and work with commands  
+
+1. Create a directory for git project
+mkdir git-project  
+2. Ran the command below to initialize a git repository
+git init  
+3. Git will create a hidden .git/ directory in my-project/, like this:
+```bash   
+   my-project/
+├── .git/
+├── (your files go here)
+```
+The .git/ folder contains all the internal Git data, including:  
+- History  
+- Configuration
+- Branches
+- Logs
+- Object storage
+
+### Now we have installed git in our machine and intiailized the git, now lets see how to Add files, commit files, push files to git  
+
+1. Create a file
+sample.txt  
+2. add content to the file
+3. Now ran the below command and it will give you current changes of the file
+git status  
+4. Now we need to run below command
+git add . or git add filename
+It will stage the file, which means we are telling the git to include this files in our next commit.  
+6. Now use git commit   
+git commit -m "message"
+It will commit the changes to local repo
