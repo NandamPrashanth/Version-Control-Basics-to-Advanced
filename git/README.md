@@ -80,6 +80,10 @@ git status
 4. Now we need to run below command  
 git add . or git add filename
 It will stage the file, which means we are telling the git to include this files in our next commit.  
-6. Now use git commit   
+5. Now use git commit   
 git commit -m "message"  
 It will commit the changes to local repo
+6. If you would like to revert the changes back to previous commit then we need to use below command  
+git reset --hard commit id
+   
+
