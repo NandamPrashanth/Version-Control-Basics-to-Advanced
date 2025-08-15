@@ -59,6 +59,7 @@ Usually done after a pull request is reviewed and approved.
 - Review and merge
 
 ## Repository Management
+```bash
 
 git init                      # Initialize a new git repo
 git clone <repo-url>         # Clone a remote repo
@@ -68,6 +69,8 @@ git add .                    # Stage all files
 git commit -m "Message"      # Commit changes
 git push origin <branch>     # Push to GitHub
 git pull origin <branch>     # Pull from GitHub
+
+```
 
 ## Initialize a New Git Repository
 
