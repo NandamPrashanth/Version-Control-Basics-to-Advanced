@@ -255,6 +255,14 @@ Shows detailed information about a specific commit, including:
 - Lines added/removed  
 - Diff output  
 
+## To delete a branch
+
+Git checkout to main branch  
+git branch -d newbranch name  
+
+it will get deleted but it still present in github ui, to delete their you need to ran  
+git push origin --delete newbranchname  
+
 
 
 
