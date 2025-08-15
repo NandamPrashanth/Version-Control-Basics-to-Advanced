@@ -176,8 +176,81 @@ Reapplies your feature-login commits on top of main.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
+# Git Stash & Cleanup Command
 
+These Git commands are useful when you want to temporarily save, discard, or clean up changes in your working directory.
 
+**git stash**  
+
+Temporarily saves your uncommitted changes (both staged and unstaged) and reverts your working directory to the last commit.  
+
+Example:
+
+You're working on a feature but suddenly need to switch to another branc then you can follow the below commands by changing your branch name
+
+# Make some changes  
+echo "temporary code" >> script.js  
+
+# Save changes without committing  
+git stash  
+
+# Now switch branches safely  
+**git checkout main**  
+
+Now your changes are saved in a "stash stack" and removed from your working directory.  
+
+**git stash pop**  
+
+Applies the most recently stashed changes back to your working directory and removes them from the stash list.  
+
+Example:
+
+After switching back to your original branch you can ran the below commands by changing your branch name
+
+**git checkout feature-branch**  
+**git stash pop**  
+
+Your previously saved changes are now restored.
+
+**git reset --hard**  
+
+Resets your working directory and staging area to the last commit.
+All uncommitted changes will be permanently lost.
+
+-------------------------------------------------------------------------------------------------
+
+# Git History  
+
+## git log  
+
+Displays a list of recent commits, including:  
+
+- Commit hash (ID)  
+- Author  
+- Date  
+- Commit message  
+
+## git diff  
+
+Displays the differences between:
+
+- Modified files and the last committed version  
+- Staged and unstaged changes  
+- Two commits or branches (with additional options)  
+
+## Compare two branches:  
+
+git diff main feature-branch  
+
+where main and feature branch are two branches.  
+
+## git show commit-id  
+
+Shows detailed information about a specific commit, including:  
+
+- Files changed  
+- Lines added/removed  
+- Diff output  
 
 
 
